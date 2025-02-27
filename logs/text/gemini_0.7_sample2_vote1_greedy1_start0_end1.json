@@ -1,0 +1,65 @@
+[
+    {
+        "steps": [
+            {
+                "step": 0,
+                "x": "I am a students in the uninversity, today is my first day to attend the class, I am so excited.\n",
+                "ys": [
+                    ""
+                ],
+                "new_ys": [
+                    "The campus buzzed with a nervous energy, a kaleidoscope of faces both familiar and new. Sunlight glinted off backpacks and spilled across the manicured lawns as I navigated my way towards the designated building for my first lecture. The air crackled with anticipation, a feeling I shared deeply as I adjusted my own bag and took a deep breath. I am a student in the university, today is my first day to attend the class, I am so excited.",
+                    "Finding my classroom proved a small adventure in itself, a maze of corridors and numbered doors. The room was already filling, the murmur of conversations a soft hum that gradually increased in volume. I found a seat near the front, eager to absorb every word and completely immerse myself in this new chapter. I am a student in the university, today is my first day to attend the class, I am so excited.",
+                    "The professor, a figure both imposing and welcoming, began to speak, his words painting vivid pictures of the subject matter. I scribbled notes furiously, trying to capture every nuance and detail, my mind racing with possibilities and new perspectives. The subject ignited something within me. I am a student in the university, today is my first day to attend the class, I am so excited.",
+                    "As the class ended, a sense of accomplishment washed over me, a feeling of finally being where I belonged. The weight of expectation lifted, replaced by a surge of motivation and a burning desire to learn. I packed up my things, a smile playing on my lips, eager for the next adventure. I am a student in the university, today is my first day to attend the class, I am so excited."
+                ],
+                "values": [
+                    0,
+                    0,
+                    1,
+                    0
+                ],
+                "select_new_ys": [
+                    "The campus buzzed with a nervous energy, a kaleidoscope of faces both familiar and new. Sunlight glinted off backpacks and spilled across the manicured lawns as I navigated my way towards the designated building for my first lecture. The air crackled with anticipation, a feeling I shared deeply as I adjusted my own bag and took a deep breath. I am a student in the university, today is my first day to attend the class, I am so excited."
+                ]
+            },
+            {
+                "step": 1,
+                "x": "I am a students in the uninversity, today is my first day to attend the class, I am so excited.\n",
+                "ys": [
+                    "The campus buzzed with a nervous energy, a kaleidoscope of faces both familiar and new. Sunlight glinted off backpacks and spilled across the manicured lawns as I navigated my way towards the designated building for my first lecture. The air crackled with anticipation, a feeling I shared deeply as I adjusted my own bag and took a deep breath. I am a student in the university, today is my first day to attend the class, I am so excited."
+                ],
+                "new_ys": [
+                    "The campus buzzed with a nervous energy, a kaleidoscope of faces both familiar and new. Sunlight glinted off backpacks and spilled across the manicured lawns as I navigated my way towards the designated building for my first lecture. The air crackled with anticipation, a feeling I shared deeply as I adjusted my own bag and took a deep breath. I am a student in the university, today is my first day to attend the class, I am so excited.Finding my classroom proved more challenging than anticipated, a maze of corridors and cryptic signage. I circled a few times, a knot of anxiety tightening in my stomach as the minutes ticked by. Finally, spotting a helpful-looking student, I swallowed my pride and asked for directions, grateful for their patient guidance towards my destination. I am a student in the university, today is my first day to attend the class, I am so excited.",
+                    "Stepping into the lecture hall, I scanned the room, a sea of expectant faces already filling the seats. I found an empty spot near the middle, quickly unpacking my notebook and pens, trying to appear composed despite the flurry of butterflies in my stomach. The professor entered, a wave of silence washing over the room as the formal start to my university career began. I am a student in the university, today is my first day to attend the class, I am so excited.",
+                    "As the lecture began, I found myself captivated by the subject matter, a topic I had been eagerly anticipating exploring in greater depth. The professor spoke with passion and knowledge, igniting a spark of intellectual curiosity within me. I scribbled notes furiously, eager to absorb every detail and feeling the weight of possibility settling upon my shoulders. I am a student in the university, today is my first day to attend the class, I am so excited."
+                ],
+                "values": [
+                    1,
+                    0,
+                    0
+                ],
+                "select_new_ys": [
+                    "The campus buzzed with a nervous energy, a kaleidoscope of faces both familiar and new. Sunlight glinted off backpacks and spilled across the manicured lawns as I navigated my way towards the designated building for my first lecture. The air crackled with anticipation, a feeling I shared deeply as I adjusted my own bag and took a deep breath. I am a student in the university, today is my first day to attend the class, I am so excited.Finding my classroom proved more challenging than anticipated, a maze of corridors and cryptic signage. I circled a few times, a knot of anxiety tightening in my stomach as the minutes ticked by. Finally, spotting a helpful-looking student, I swallowed my pride and asked for directions, grateful for their patient guidance towards my destination. I am a student in the university, today is my first day to attend the class, I am so excited."
+                ]
+            }
+        ],
+        "idx": 0,
+        "ys": [
+            "The campus buzzed with a nervous energy, a kaleidoscope of faces both familiar and new. Sunlight glinted off backpacks and spilled across the manicured lawns as I navigated my way towards the designated building for my first lecture. The air crackled with anticipation, a feeling I shared deeply as I adjusted my own bag and took a deep breath. I am a student in the university, today is my first day to attend the class, I am so excited.Finding my classroom proved more challenging than anticipated, a maze of corridors and cryptic signage. I circled a few times, a knot of anxiety tightening in my stomach as the minutes ticked by. Finally, spotting a helpful-looking student, I swallowed my pride and asked for directions, grateful for their patient guidance towards my destination. I am a student in the university, today is my first day to attend the class, I am so excited."
+        ],
+        "infos": [
+            {
+                "rs": [
+                    7
+                ],
+                "r": 7.0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 2541,
+            "prompt_tokens": 1231,
+            "cost": 0.0005003
+        }
+    }
+]

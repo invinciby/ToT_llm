@@ -1,6 +1,6 @@
 import google.generativeai as genai
 
-genai.configure(api_key='AIzaSyBrkzBL9_JcvBF72nK7-qZ08bXgix7mU_I',transport="rest") 
+genai.configure(api_key='Yor API Key',transport="rest") 
 
 gemini_model = genai.GenerativeModel(model_name="gemini-2.0-flash")
 
@@ -11,6 +11,7 @@ import backoff
 
 @backoff.on_exception(backoff.expo, Exception, max_tries=5)
 def completions_with_backoff(prompt,stop):
+  
     ans = gemini_model.generate_content(prompt,stream=False)
     
     return ans

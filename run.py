@@ -51,37 +51,29 @@ def run(args):
     print('usage_so_far', gpt_usage(args.backend))
 
 def parse_args():
-    # 创建一个ArgumentParser对象
     args = argparse.ArgumentParser()
-    # 添加一个名为backend的参数，类型为字符串，可选值为gpt-4、gpt-3.5-turbo和gemini，默认值为gemini
-    args.add_argument('--backend', type=str, choices=['gpt-4', 'gpt-3.5-turbo','gemini'], default='gemini')
-    # 添加一个名为temperature的参数，类型为浮点数，默认值为0.7
+    args.add_argument('--backend', type=str, choices=['gemini'], default='gemini')
     args.add_argument('--temperature', type=float, default=0.7)
+    args.add_argument('--task', type=str, required=false, choices=['game24', 'text'], default='text')
 
-    # 添加一个名为task的参数，类型为字符串，必填，可选值为game24、text和crosswords，默认值为game24
-    args.add_argument('--task', type=str, required=false, choices=['game24', 'text', 'crosswords'], default='game24')
-    # 添加一个名为task_start_index的参数，类型为整数，默认值为900
-    args.add_argument('--task_start_index', type=int, default=900)
-    # 添加一个名为task_end_index的参数，类型为整数，默认值为1000
-    args.add_argument('--task_end_index', type=int, default=1000)
-
-    # 添加一个名为naive_run的参数，类型为布尔值，默认值为False
+    args.add_argument('--task_start_index', type=int, default=0)
+    args.add_argument('--task_end_index', type=int, default=1)
     args.add_argument('--naive_run', action='store_true')
+    
     # 添加一个名为prompt_sample的参数，类型为字符串，可选值为standard和cot，默认值为standard
     args.add_argument('--prompt_sample', type=str, choices=['standard', 'cot'],default='standard')  # only used when method_generate = sample, or naive_run
-
     # 添加一个名为method_generate的参数，类型为字符串，可选值为sample和propose，默认值为sample
     args.add_argument('--method_generate', type=str, choices=['sample', 'propose'], default='sample')
     # 添加一个名为method_evaluate的参数，类型为字符串，可选值为value和vote，默认值为vote
-    args.add_argument('--method_evaluate', type=str, choices=['value', 'vote'], default='value')
+    args.add_argument('--method_evaluate', type=str, choices=['value', 'vote'], default='vote')
     # 添加一个名为method_select的参数，类型为字符串，可选值为sample和greedy，默认值为greedy
     args.add_argument('--method_select', type=str, choices=['sample', 'greedy'], default='greedy')
     # 添加一个名为n_generate_sample的参数，类型为整数，默认值为2
-    args.add_argument('--n_generate_sample', type=int, default=3)  # only thing needed if naive_run
+    args.add_argument('--n_generate_sample', type=int, default=2)  # only thing needed if naive_run
     # 添加一个名为n_evaluate_sample的参数，类型为整数，默认值为3
     args.add_argument('--n_evaluate_sample', type=int, default=1)
     # 添加一个名为n_select_sample的参数，类型为整数，默认值为1
-    args.add_argument('--n_select_sample', type=int, default=2)
+    args.add_argument('--n_select_sample', type=int, default=1)
 
     # 解析参数
     args = args.parse_args()
